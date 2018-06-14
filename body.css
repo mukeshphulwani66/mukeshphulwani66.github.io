@@ -28,6 +28,7 @@ section{
 }
 .isometric:hover{
     background:url(com.jpg);
+    background-size: cover;
     transform: translate(-50%,-50%) rotateX(0) rotateZ(0);
     box-shadow: 0 20px 20px rgba(0,0,0,0.5);
     animation: none;
