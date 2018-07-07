@@ -18,7 +18,7 @@ section{
     left:50%;
     width:350px;
     height: 350px;
-    background:url(p2.jpg);
+    background:url(img/p2.jpg);
     background-size: cover;
     transform: translate(-50%,-50%) rotateX(45deg) rotateZ(-45deg);
     transform-style: preserve-3d;
@@ -28,7 +28,7 @@ section{
 
 }
 .isometric:hover{
-    background:url(com.jpg);
+    background:url(img/com.jpg);
     background-size: cover;
     transform: translate(-50%,-50%) rotateX(0) rotateZ(0);
     box-shadow: 0 20px 20px rgba(0,0,0,0.5);
@@ -179,6 +179,7 @@ nav ul{
 nav ul li{
     list-style: none;  
 }
+
 nav ul li a{
     display:block;
     height: 50px;
@@ -191,7 +192,9 @@ nav ul li a{
 
 nav ul li a:hover{
       background: rgb(192, 5, 5);
-      color:black
+      color:black;
+      text-decoration:none;
+      
 }
  /* this is our social icon style */
 
@@ -274,7 +277,9 @@ nav ul li a:hover{
     }
 }
 
-/*flex box*/
+/* skills page */
+
+
 
 
 

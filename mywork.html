@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>about us</title>
+    <title>work</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
      <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="skill.css">
     <style>
     
     .col-md-4{
@@ -23,7 +24,7 @@
     }
     body{
       height: 100vh;
-      background: url("back.jpg") no-repeat center center fixed ;
+      background: url("img/back.jpg") no-repeat center center fixed ;
       background-size:cover; 
     }
     h2{
@@ -40,12 +41,37 @@
     .container{
        text-align: center;
     }
+    .menu-toggle{
+      background: black;
+    
+    }
+    .menu-toggle span{
+      background: red;
+    }
+    div.menu-toggle.active{
+      background: red;
+    }
     
     </style>
 
 </head>
 <body>
-    
+  <header>
+    <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="mywork.html#myskills">MySkills</a></li>
+            <li><a href="mywork.html">MyWork</a></li>
+        
+        </ul>
+    </nav>
+</header>
+<br>
     <div class="container">
       <hr>
       <h2 class="hh2">My Games and Apps</h2>
@@ -53,7 +79,7 @@
         <div class="row he">
           <div class="col-md-4">
             <div class="card border-danger text-center">
-              <img class="card-img-top" style="width:50%;height:auto;margin-left:auto;margin-right:auto;" src="hell.jpg" alt="Card image cap">
+              <img class="card-img-top" style="width:50%;height:auto;margin-left:auto;margin-right:auto;" src="img/hell.jpg" alt="Card image cap">
               <div class="card-body text-light">
                 <h5 class="card-title text-danger" >HELL WORLD</h5>
                 <p class="card-text">This is an action platform game where you need to kill monsters and move to next level</p>
@@ -64,7 +90,7 @@
           </div>
           <div class="col-md-4">
             <div class="card border-danger text-center">
-              <img class="card-img-top" src="angry.png" alt="Card image cap">
+              <img class="card-img-top" src="img/angry.png" alt="Card image cap">
               <div class="card-body text-light">
                 <h5 class="card-title text-danger">ANGRY WOLF</h5>
                 <p class="card-text">Get ready for a thrill ..!.An acrade endless running game + kill enemys to complete levels.Lets see who last for a longer time .</p>
@@ -75,7 +101,7 @@
          </div>
          <div class="col-md-4">
           <div class="card border-danger text-center">
-            <img class="card-img-top" src="weather.jpg"  alt="Card image cap">
+            <img class="card-img-top" src="img/weather.jpg"  alt="Card image cap">
             <div class="card-body text-light">
               <h5 class="card-title text-danger">whizzy weather forecast</h5>
               <p class="card-text">check weather conditions before leaving home . This is simple weather app which will give you current weather conditions in your city..</p>
@@ -91,30 +117,258 @@
         <div class="row he">
           <div class="col-md-4">
             <div class="card border-danger text-center">
-              <img class="card-img-top" style="width:50%;height:auto;margin-left:auto;margin-right:auto;" src="hell.jpg" alt="Card image cap">
+              <img class="card-img-top"  src="img/coffee.jpg" alt="Card image cap">
               <div class="card-body text-light">
-                <h5 class="card-title text-danger" >HELL WORLD</h5>
-                <p class="card-text">This is an action platform game where you need to kill monsters and move to next level</p>
-                <button type="button" class="btn btn-danger">play in browser</button>
-                <button type="button" class="btn btn-danger">open in playstore</button>
+                <h5 class="card-title text-danger" >BRISTO COFFEE</h5>
+                <p class="card-text">This is simple coffee shop single page theme</p>
+                <button type="button" class="btn btn-danger">open</button>
+                <button type="button" class="btn btn-danger">view code</button>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card border-danger text-center">
-              <img class="card-img-top" src="angry.png" alt="Card image cap">
-              <div class="card-body text-secondary">
-                <h5 class="card-title text-danger">ANGRY WOLF</h5>
-                <p class="card-text">Get ready for a thrill ..!.An acrade endless running game + kill enemys to complete levels.Lets see who last for a longer time .</p>
-                <button type="button" class="btn btn-danger">play in browser</button>
-                <button type="button" class="btn btn-danger">open in playstore</button>
+              <img class="card-img-top" src="img/vesco.jpg" alt="Card image cap">
+              <div class="card-body text-light">
+                <h5 class="card-title text-danger">CLONE OF VESCO WEBSITE</h5>
+                <p class="card-text">clone of vesco</p>
+                <button type="button" class="btn btn-danger">open</button>
+                <button type="button" class="btn btn-danger">view code</button>
               </div>
             </div>
          </div>
+         <div class="col-md-4">
+          <div class="card border-danger text-center">
+            <img class="card-img-top" src="img/cms.jpg" alt="Card image cap">
+            <div class="card-body text-light">
+              <h5 class="card-title text-danger">CMS</h5>
+              <p class="card-text">This is simple theme for project like content managenent system</p>
+              <button type="button" class="btn btn-danger">open</button>
+              <button type="button" class="btn btn-danger">view code</button>
+            </div>
+          </div>
+       </div>
          
         </div>
+       <hr>
+        <div class="row he">
+          <div class="col-md-4">
+            <div class="card border-danger text-center">
+              <img class="card-img-top"  src="img/multi.jpg" alt="Card image cap">
+              <div class="card-body text-light">
+                <h5 class="card-title text-danger">GLOZZOM (multipage theme)</h5>
+                <p class="card-text">This is simple coffee shop single page theme</p>
+                <button type="button" class="btn btn-danger">open</button>
+                <button type="button" class="btn btn-danger">view code</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-danger text-center">
+              <img class="card-img-top" src="img/fb.jpg" alt="Card image cap">
+              <div class="card-body text-light">
+                <h5 class="card-title text-danger">FRIENDSBOOK</h5>
+                <p class="card-text">This is single page theme for social profile websites</p>
+                <button type="button" class="btn btn-danger">open</button>
+                <button type="button" class="btn btn-danger">view code</button>
+              </div>
+            </div>
+         </div>
+         <div class="col-md-4">
+          <div class="card border-danger text-center">
+            <img class="card-img-top" src="img/book.jpg" alt="Card image cap">
+            <div class="card-body text-light">
+              <h5 class="card-title text-danger">MIZUXE</h5>
+              <p class="card-text">Simple landing page for newly released book</p>
+              <button type="button" class="btn btn-danger">open</button>
+              <button type="button" class="btn btn-danger">view code</button>
+            </div>
+          </div>
+       </div>
+       
+        <div class="col-md-4">
+          <div class="card border-danger text-center">
+            <img class="card-img-top"  src="img/pf.jpg" alt="Card image cap">
+            <div class="card-body text-light">
+              <h5 class="card-title text-danger">GLOZZOM (multipage theme)</h5>
+              <p class="card-text">This is simple coffee shop single page theme</p>
+              <button type="button" class="btn btn-danger">open</button>
+              <button type="button" class="btn btn-danger">view code</button>
+            </div>
+          </div>
+        </div>
     
+         
+        </div>
+        <hr>
+        <h2 class="hh2">Full Stack Apps</h2>
+        <hr>
+        <div class="row he">
+          <div class="col-md-4">
+            <div class="card border-danger text-center">
+              <img class="card-img-top"  src="img/ecommerce.jpg" alt="Card image cap">
+              <div class="card-body text-light">
+                <h5 class="card-title text-danger">LifeStyle Store</h5>
+                <p class="card-text">This is the ecommerce website created using html | css | php | mysql</p>
+                <button type="button" class="btn btn-danger">open</button>
+                <button type="button" class="btn btn-danger">view code</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-danger text-center">
+              <img class="card-img-top" src="img/fb.jpg" alt="Card image cap">
+              <div class="card-body text-light">
+                <h5 class="card-title text-danger">FRIENDSBOOK</h5>
+                <p class="card-text">This is single page theme for social profile websites</p>
+                <button type="button" class="btn btn-danger">open</button>
+                <button type="button" class="btn btn-danger">view code</button>
+              </div>
+            </div>
+         </div>
+         </div>
+    </div>
+    <br>
+    <br>
+        <div class="container" id="myskills">
+           <h2 >ONE MAN ARMY</h2> 
+         <hr>
+            <div class="row">
+               <div class="col-md-4 text-center">
+                    <img class="img-fluid img-thumbnail"  src="img/hackwin.jpg" alt="">
+               </div> 
+               <div class="col-md-7">
+               
+              
+               <div class="skills">
+                    <div class="skills-label">
+                     <h3>HTML</h3>
+                     <span class="percent">75%</span>
+                     <div style="clear:both;"></div>
+                    </div>
+                    <div class="bar" >
+                        <div class="progress1" style="width:75%">
+                        </div>
+                    </div>
+                </div>
+                <div class="skills">
+                        <div class="skills-label">
+                         <h3>CSS</h3>
+                         <span class="percent">70%</span>
+                         <div style="clear:both;"></div>
+                        </div>
+                        <div class="bar" >
+                            <div class="progress1" style="width:70%">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                            <div class="skills-label">
+                             <h3>JAVASCRIPT</h3>
+                             <span class="percent">85%</span>
+                             <div style="clear:both;"></div>
+                            </div>
+                            <div class="bar" >
+                                <div class="progress1" style="width:85%">
+                                </div>
+                            </div>
+                   </div>
+                   <div class="skills">
+                            <div class="skills-label">
+                             <h3>BOOTSTRAP</h3>
+                             <span class="percent">70%</span>
+                             <div style="clear:both;"></div>
+                            </div>
+                            <div class="bar" >
+                                <div class="progress1" style="width:70%">
+                                </div>
+                            </div>
+                
+                   </div>
+                   <div class="skills">
+                      <div class="skills-label">
+                       <h3 style="word-spacing:10px;">ANGULAR 2+</h3>
+                       <span class="percent">40%</span>
+                       <div style="clear:both;"></div>
+                      </div>
+                      <div class="bar" >
+                          <div class="progress1" style="width:40%">
+                          </div>
+                      </div>
+          
+             </div>
+                
+          
+             </div>
+             </div>
+        <div style="margin:0px 10px">
+             <div class="skills">
+                <div class="skills-label">
+                 <h3>NODE.JS</h3>
+                 <span class="percent">75%</span>
+                 <div style="clear:both;"></div>
+                </div>
+                <div class="bar" >
+                    <div class="progress1" style="width:75%">
+                    </div>
+                </div>
 
+    
+             </div>
+             <div class="skills">
+                <div class="skills-label">
+                 <h3>MONGODB</h3>
+                 <span class="percent">70%</span>
+                 <div style="clear:both;"></div>
+                </div>
+                <div class="bar" >
+                    <div class="progress1" style="width:70%">
+                    </div>
+                </div>
+    
+             </div>
+             <div class="skills">
+                <div class="skills-label">
+                 <h3>PHP</h3>
+                 <span class="percent">45%</span>
+                 <div style="clear:both;"></div>
+                </div>
+                <div class="bar" >
+                    <div class="progress1" style="width:40%">
+                    </div>
+                </div>
+    
+             </div>
+             <div class="skills">
+                <div class="skills-label">
+                 <h3>MYSQL</h3>
+                 <span class="percent">40%</span>
+                 <div style="clear:both;"></div>
+                </div>
+                <div class="bar" >
+                    <div class="progress1" style="width:40%">
+                    </div>
+                </div>
+
+    
+             </div>
+             <div class="skills">
+                <div class="skills-label">
+                 <h3>IONIC/CORDOVA</h3>
+                 <span class="percent">50%</span>
+                 <div style="clear:both;"></div>
+                </div>
+                <div class="bar" >
+                    <div class="progress1" style="width:50%">
+                    </div>
+                </div>
+
+    
+             </div>
+            
+            
+            </div>
+          </div>
         </div>
 
 
@@ -124,5 +378,19 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+   
+    <script>
+
+      $(document).ready(function(){
+        $('.menu-toggle').click(function(){
+            $('.menu-toggle').toggleClass('active');
+            $('nav').toggleClass('active');
+        })
+      })
+
+  
+ 
+
+    </script>
 </body>
 </html>
