@@ -28,7 +28,7 @@ section{
 
 }
 .isometric:hover{
-    background:url(img/com.jpg);
+    background:url(img/mypic.jpg);
     background-size: cover;
     transform: translate(-50%,-50%) rotateX(0) rotateZ(0);
     box-shadow: 0 20px 20px rgba(0,0,0,0.5);
@@ -106,6 +106,7 @@ header{
     top:0;
     left:0;
     width: 100%;
+    z-index: 1000;
 }
 .menu-toggle{
     width:50px;
@@ -115,6 +116,7 @@ header{
     top: 0;
     right:0;
     cursor: pointer;
+ 
     z-index: 1;
     transition: .5s;
 }
@@ -183,6 +185,7 @@ nav ul li{
 nav ul li a{
     display:block;
     height: 50px;
+    font-weight: bold;
     line-height: 50px;
     padding: 0 20px;
     color: #f00;
@@ -198,7 +201,12 @@ nav ul li a:hover{
 }
  /* this is our social icon style */
 
-
+ .rightside{
+    position: absolute;
+    top:35%;
+    right: 5%; 
+    z-index: 10;
+}
   
 
 
@@ -211,7 +219,7 @@ nav ul li a:hover{
 .leftside li,.rightside li{
     list-style-type: none;
     padding: 10px;
-    transition: 1.2s ease-in-out;
+    transition: .5s;
     position: relative;
     background: rgba(199, 7, 7, 0.829);
     border-radius:20%; 
@@ -223,18 +231,38 @@ nav ul li a:hover{
     color: rgb(0, 0, 0);
    
 }
-.leftside li:hover,.rightside li:hover{
+.git{
+    position: fixed;
+    bottom: 8%;
+    right: 1.5%;
+    z-index: 100000;
+    
+    
+}
+.git li{
+    list-style-type: none;
+    background: rgb(180, 2, 2);
+    padding: 10px;
+    border:7px double black;
+    transition: .5s;
+}
+.git li a{
+    font-size:16px; 
+    font-weight: bolder;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  
+    
+}
+.leftside li:hover,.rightside li:hover,.git li:hover{
     background: rgb(238, 235, 235);
-    transform: rotate(360deg);
+  /* transform: rotate(360deg); */
+  transform: scale(1.2,1.2)
 
 }
 
-.rightside{
-    position: absolute;
-    top:35%;
-    right: 5%; 
-    z-index: 10;
-}
+
+
 /* rest css*/
 .typed-cursor.typed-cursor--blink{
     color: red;
@@ -268,8 +296,8 @@ nav ul li a:hover{
 @media (max-width:540px){
     .isometric{
         top:60%;
-        height: 260px;
-        width: 260px;
+        height: 230px;
+        width: 230px;
     }
 
     .aboutme,.thisalso{
