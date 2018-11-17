@@ -75,6 +75,19 @@
         showCursor :true,
         loop: false
   });
+        
+ function myFunction(x) {
+    if (x.matches) { // If media query matches
+   
+        document.getElementsByClassName("menu-toggle")[0].classList.add("active");
+        document.getElementsByTagName("nav")[0].classList.add("active");
+
+    }
+}
+
+    var x = window.matchMedia("(min-width:540px)")
+    myFunction(x)
+    x.addListener(myFunction) 
  
 
 
