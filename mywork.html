@@ -24,9 +24,12 @@
       background: black;
     }
     body{
-      height: 100vh;
+      margin: 0;
+      padding:0;
+      overflow-y: auto;
+      height: 120vh;
       background: url("img/back2.jpg") no-repeat center center fixed ;
-      background-size:cover; 
+     background-size:cover; 
     }
     h2{
       text-shadow: 1px 1px 0 rgba(249,77,77,1) , -1px -1px 0 rgba(249,77,77,1) , 1px -1px 0 rgba(249,77,77,1) , -1px 1px 0 rgba(249,77,77,1) , 4px 4px 8px rgba(255,0,0,1) , -4px 4px 8px rgba(252,0,16,1) , 4px -4px 8px rgba(255,2,2,1) , -4px -4px 8px rgba(135,44,44,1) ;
@@ -366,7 +369,7 @@
 
     
              </div>
-             <div class="skills" data-aos="fade-right">
+             <div class="skills">
                 <div class="skills-label">
                  <h3>IONIC/CORDOVA</h3>
                  <span class="percent">50%</span>
@@ -380,7 +383,7 @@
     
              </div>
             
-            
+             
             </div>
           </div>
         </div>
@@ -408,6 +411,19 @@
         })
       })
 
+
+ function myFunction(x) {
+    if (x.matches) { // If media query matches
+   
+        document.getElementsByClassName("menu-toggle")[0].classList.add("active");
+        document.getElementsByTagName("nav")[0].classList.add("active");
+
+    }
+}
+
+    var x = window.matchMedia("(min-width:540px)")
+    myFunction(x)
+    x.addListener(myFunction) 
   
  
 
