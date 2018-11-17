@@ -16,10 +16,6 @@
         
     }
   
-    hr{
-      border-color:black;
-      color: white; 
-    }
     .card{
       background: black;
     }
@@ -35,17 +31,18 @@
 
    canvas {
      display: block;
-    position: fixed;}
+    position: fixed;
+  }
     h2{
       text-shadow: 1px 1px 0 rgba(249,77,77,1) , -1px -1px 0 rgba(249,77,77,1) , 1px -1px 0 rgba(249,77,77,1) , -1px 1px 0 rgba(249,77,77,1) , 4px 4px 8px rgba(255,0,0,1) , -4px 4px 8px rgba(252,0,16,1) , 4px -4px 8px rgba(255,2,2,1) , -4px -4px 8px rgba(135,44,44,1) ;
       display:inline-block;
-      box-shadow: inset 0 0 25px rgb(255, 1, 1);
+      box-shadow: inset 0 0 10px rgb(255, 1, 1);
       color:rgb(0, 0, 0);
       position: relative;
       margin:0;
       padding:0;
       letter-spacing: 2px;
-     border: 3px solid black;
+  
      padding: 10px;
      background: rgba(0, 0, 0, 0.315);
     }
@@ -101,9 +98,9 @@
 
     <div class="container">
       
-      <hr>
+      <br><br>
       <h2 class="hh2">My Games and Apps</h2>
-      <hr>
+      <br><br>
         <div class="row he">
           <div class="col-md-4">
             <div class="card border-danger text-center" data-aos="fade-right">
@@ -137,9 +134,9 @@
           </div>
          </div>
         </div>
-        <hr>
+        <br><br>
         <h2>Front-end Themes</h2>
-        <hr>
+        <br><br>
         <div class="row he">
           <div class="col-md-4">
             <div class="card border-danger text-center" data-aos="flip-left">
@@ -176,7 +173,7 @@
        </div>
          
         </div>
-       <hr>
+     
         <div class="row he">
           <div class="col-md-4">
             <div class="card border-danger text-center" data-aos="fade-up-right">
@@ -226,9 +223,9 @@
     
          
         </div>
-        <hr>
+        <br><br>
         <h2 class="hh2">Full Stack Apps</h2>
-        <hr>
+        <br><br>
         <div class="row he">
           <div class="col-md-4">
             <div class="card border-danger text-center" data-aos="flip-up">
@@ -269,7 +266,7 @@
     <br>
         <div class="container" id="myskills">
            <h2 >ONE MAN ARMY</h2> 
-         <hr>
+         <br><br>
             <div class="row">
                <div class="col-md-4 text-center">
                     <img data-aos="zoom-in" class="img-fluid img-thumbnail"  src="img/hackwin.jpg" alt="">
@@ -462,7 +459,7 @@
 var ctx = c.getContext("2d");
 
 //making the canvas full screen
-c.height = window.innerHeight +30;
+c.height = window.innerHeight;
 
 c.width = window.innerWidth;
 
