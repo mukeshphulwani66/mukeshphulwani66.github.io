@@ -243,7 +243,7 @@ nav ul li a:hover{
     list-style-type: none;
     background: rgb(180, 2, 2);
     padding: 10px;
-    border:7px double black;
+    border-radius: 5px;
     transition: .5s;
 }
 .git li a{
@@ -306,9 +306,44 @@ nav ul li a:hover{
 }
 
     
+/* pulse */
 
+.pulse {
 
-/* skills page */
+    cursor: pointer;
+    box-shadow: 0 0 0 rgba(253, 253, 253, 0.548);
+    animation: pulse 2s infinite;
+  }
+  .pulse:hover {
+    animation: none;
+  }
+ 
+@-webkit-keyframes pulse {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+  }
+  @keyframes pulse {
+    0% {
+      -moz-box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.4);
+      box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.4);
+    }
+
+    70% {
+        -moz-box-shadow: 0 0 0 30px rgba(255, 1, 1, 0);
+        box-shadow: 0 0 0 30px rgba(255, 0, 0, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
+        box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
+    }
+  }
 
 
 

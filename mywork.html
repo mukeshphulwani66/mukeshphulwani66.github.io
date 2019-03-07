@@ -23,28 +23,36 @@
         margin: 0;
        padding:0;
        overflow-y: auto;
-      /* background: url("img/back2.jpg") no-repeat center center fixed ; */
-      background-size:cover;
-        height:130vh;
-        background: black;
+       /* background: #232526; 
+background: -webkit-linear-gradient(to top, #414345, #232526);  
+background: linear-gradient(to top, #414345, #232526);  */
+ background-image:  radial-gradient(
+      circle,
+      rgb(255, 0, 0),
+      #000000
+    );
+
+      height: 100vh;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+ 
     }
 
-   canvas {
-     display: block;
-    position: fixed;
-  }
+
     h2{
-      text-shadow: 1px 1px 0 rgba(249,77,77,1) , -1px -1px 0 rgba(249,77,77,1) , 1px -1px 0 rgba(249,77,77,1) , -1px 1px 0 rgba(249,77,77,1) , 4px 4px 8px rgba(255,0,0,1) , -4px 4px 8px rgba(252,0,16,1) , 4px -4px 8px rgba(255,2,2,1) , -4px -4px 8px rgba(135,44,44,1) ;
+     
       display:inline-block;
-      box-shadow: inset 0 0 10px rgb(255, 1, 1);
-      color:rgb(0, 0, 0);
+      box-shadow: 0 0 25px rgb(255, 1, 1);
+      color: rgb(255, 255, 255);
+      border-radius: 5px;
       position: relative;
       margin:0;
       padding:0;
       letter-spacing: 2px;
   
      padding: 10px;
-     background: rgba(0, 0, 0, 0.315);
+     background: rgba(0, 0, 0, 0.62);
     }
     .container{
        text-align: center;
@@ -73,7 +81,7 @@
 
 </head>
 <body>
-    <canvas id="c"></canvas>
+  
   <header>
     <div class="menu-toggle">
         <span></span>
@@ -91,7 +99,7 @@
 </header>
 <div class="git">
   <ul>
-      <li><a href="mailto:mukeshphulwani55@gmail.com" class="fa fa-envelope">    GET IN TOUCH</a></li>
+      <li class="pulse"><a href="mailto:mukeshphulwani55@gmail.com" class="fa fa-envelope">    GET IN TOUCH</a></li>
  </ul>
 </div>
 <br>
@@ -130,6 +138,17 @@
               <p class="card-text">This is simple weather app which will give you current weather conditions in your city..</p>
               <a target="_blank" href="https://play.google.com/store/apps/details?id=com.phulwanisapp.weatherapp&hl=en_US"><button type="button" class="btn btn-danger mb-1">open in playstore</button></a>
               <a target="_blank" href="https://github.com/mukeshphulwani66/ionic-weather-app"><button type="button" class="btn btn-danger  mb-1">view code</button></a>
+            </div>
+          </div>
+         </div>
+         <div class="col-md-4">
+          <div class="card border-danger text-center" data-aos="fade-left">
+            <img class="card-img-top" src="img/whatsticker.png"  alt="Card image cap">
+            <div class="card-body text-light">
+              <h5 class="card-title text-danger">whatsticker</h5>
+              <p class="card-text">Get the latest sticker for whatsapp</p>
+              <a target="_blank" href="https://play.google.com/store/apps/details?id=com.mukeshphulwani66.wasticker"><button type="button" class="btn btn-danger mb-1">open in playstore</button></a>
+              <a target="_blank" href="https://github.com/mukeshphulwani66/whatssticker"><button type="button" class="btn btn-danger  mb-1">view code</button></a>
             </div>
           </div>
          </div>
@@ -176,17 +195,6 @@
      
         <div class="row he">
           <div class="col-md-4">
-            <div class="card border-danger text-center" data-aos="fade-up-right">
-              <img class="card-img-top"  src="img/multi.jpg" alt="Card image cap">
-              <div class="card-body text-light">
-                <h5 class="card-title text-danger">GLOZZOM (multipage theme)</h5>
-                <p class="card-text">This is amazing multi page theme for any kind of company services website</p>
-                <a target="_blank" href="https://mukeshphulwani66.github.io/multipage-theme-glozzom/"><button type="button" class="btn btn-danger">open</button></a>
-                <a target="_blank" href="https://github.com/mukeshphulwani66/multipage-theme-glozzom"><button type="button" class="btn btn-danger">view code</button></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
             <div class="card border-danger text-center" data-aos="zoom-in">
               <img class="card-img-top" src="img/fb.jpg" alt="Card image cap">
               <div class="card-body text-light">
@@ -209,19 +217,7 @@
           </div>
        </div>
        
-        <div class="col-md-4">
-          <div class="card border-danger text-center" data-aos="zoom-in-up">
-            <img class="card-img-top"  src="img/pf.jpg" alt="Card image cap">
-            <div class="card-body text-light">
-              <h5 class="card-title text-danger">John Doe portfolio</h5>
-              <p class="card-text">This is the amazing portfolio of john doe</p>
-              <a target="_blank" href="https://mukeshphulwani66.github.io/john-doe-portfolio/"><button type="button" class="btn btn-danger">open</button></a>
-              <a target="_blank" href="https://github.com/mukeshphulwani66/john-doe-portfolio"><button type="button" class="btn btn-danger">view code</button></a>
-            </div>
-          </div>
-        </div>
-    
-         
+       
         </div>
         <br><br>
         <h2 class="hh2">Full Stack Apps</h2>
@@ -255,11 +251,20 @@
             <div class="card-body text-light">
               <h5 class="card-title text-danger">email-66</h5>
               <p class="card-text">we allow you to send Emails in bulk and collect feedback from your users .</p>
-              <a target="_blank" href="https://cms66.herokuapp.com/"><button type="button" class="btn btn-danger">open</button></a>
-              <a target="_blank" href="https://github.com/mukeshphulwani66/cms66" ><button type="button" class="btn btn-danger">view code</button></a>
+              <a target="_blank" href="https://email-66.herokuapp.com/"><button type="button" class="btn btn-danger">open</button></a>
+              <a target="_blank" href="https://github.com/mukeshphulwani66/email-66-reactjs-stripe-sendgrid-nodejs" ><button type="button" class="btn btn-danger">view code</button></a>
             </div>
           </div>
        </div>
+   
+       <div class="col-md-4 ">
+        <div class="card border-danger text-center p-5" data-aos="zoom-in-left">
+        
+            <h5 class="card-title text-danger">More Projects ?</h5>
+            <a target="_blank" href="https://github.com/mukeshphulwani66/" ><button type="button" class="btn btn-danger">yeah!!</button></a>
+          </div>
+        </div>
+     </div>
          </div>
     </div>
     <br>
@@ -339,11 +344,11 @@
                 <div class="skills" data-aos="fade-right">
                     <div class="skills-label">
                      <h3>REACT.JS</h3>
-                     <span class="percent">50%</span>
+                     <span class="percent">65%</span>
                      <div style="clear:both;"></div>
                     </div>
                     <div class="bar" >
-                        <div class="progress1" style="width:75%">
+                        <div class="progress1" style="width:65%">
                         </div>
                     </div>
                  </div>
@@ -455,59 +460,6 @@
     x.addListener(myFunction) 
 
 
-    var c = document.getElementById("c");
-var ctx = c.getContext("2d");
-
-//making the canvas full screen
-c.height = window.innerHeight;
-
-c.width = window.innerWidth;
-
-//chinese characters - taken from the unicode charset
-var chinese = "田由甲申甴电甶男甸甹町画甼甽甾甿畀畁畂畃畄畅畆畇畈畉畊畋界畍畎畏畐畑";
-//converting the string into an array of single characters
-chinese = chinese.split("");
-
-var font_size = 10;
-var columns = c.width/font_size; //number of columns for the rain
-//an array of drops - one per column
-var drops = [];
-//x below is the x coordinate
-//1 = y co-ordinate of the drop(same for every drop initially)
-for(var x = 0; x < columns; x++)
-	drops[x] = 1; 
-
-//drawing the characters
-function draw()
-{
-	//Black BG for the canvas
-	//translucent BG to show trail
-	ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
-	ctx.fillRect(0, 0, c.width, c.height);
-	
-	ctx.fillStyle = "red"; //green text
-	ctx.font = font_size + "px arial";
-	//looping over drops
-	for(var i = 0; i < drops.length; i++)
-	{
-		//a random chinese character to print
-		var text = chinese[Math.floor(Math.random()*chinese.length)];
-		//x = i*font_size, y = value of drops[i]*font_size
-		ctx.fillText(text, i*font_size, drops[i]*font_size);
-		
-		//sending the drop back to the top randomly after it has crossed the screen
-		//adding a randomness to the reset to make the drops scattered on the Y axis
-		if(drops[i]*font_size > c.height && Math.random() > 0.975)
-			drops[i] = 0;
-		
-		//incrementing Y coordinate
-		drops[i]++;
-	}
-}
-
-setInterval(draw, 33);
-  
- 
 
     </script>
 </body>
